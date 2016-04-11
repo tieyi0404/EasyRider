@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="left"
+    android:orientation="vertical" >
+	
+    <LinearLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5px"
+    android:orientation="horizontal" >
+    
+	<TextView
+	android:id="@+id/g_sourceAddr"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="15dp"
+    android:textStyle="bold"/>
+	
+	<TextView
+	android:id="@+id/arrow"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="15dp"
+    android:text=" ---> "
+    android:textStyle="bold"/>
+		
+	<TextView
+	android:id="@+id/g_destAddr"
+    android:layout_width="wrap_content" 
+    android:layout_height="wrap_content" 
+    android:textSize="15dp"
+    android:textStyle="bold"/>
+	
+	</LinearLayout>
+	
+    <RelativeLayout 
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5px">
+    
+    <TextView
+	android:id="@+id/bypassAddr_t"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="途径地："
+    android:textSize="12dp"/>
+        
+    <TextView
+	android:id="@+id/g_bypassAddr"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_alignBaseline="@+id/bypassAddr_t"
+    android:layout_alignBottom="@+id/bypassAddr_t"
+   	android:layout_toRightOf="@+id/bypassAddr_t"
+    android:textSize="12dp"/>
+        
+    </RelativeLayout>
+	
+
+	
+	<RelativeLayout
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:padding="5px" >
+	<TextView
+	android:id="@+id/gotime_title"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:text="出发时间："
+    android:textSize="12dp"/>
+    
+	<TextView
+	android:id="@+id/g_gotime"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content" 
+    android:layout_alignBaseline="@+id/gotime_title"
+    android:layout_alignBottom="@+id/gotime_title"
+   	android:layout_toRightOf="@+id/gotime_title"
+    android:textSize="12dp"/>
+	
+	<TextView
+	android:id="@+id/g_pubtime"
+	android:layout_width="wrap_content"
+	android:layout_height="wrap_content"
+	android:textSize="12dp"
+	android:gravity="right"
+	android:textStyle="bold" />
+    </RelativeLayout>
+ <ImageView
+    android:id="@+id/imageView"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cutline"
+    />
+</LinearLayout>
+

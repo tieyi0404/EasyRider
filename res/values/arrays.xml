@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array translatable="false" name="fillin_age">
+        <item>0~1</item>
+        <item>1~3</item>
+        <item>3~5</item>
+        <item>5~10</item>
+        <item>10～</item>
+    </string-array>
+    <string-array translatable="false" name="fillin_sex">
+        <item>男</item>
+        <item>女</item>
+    </string-array>
+    <string-array translatable="false" name="fillin_color">
+        <item>白色系</item>
+        <item>黑色系</item>
+        <item>银色系</item>
+        <item>红色系</item>
+        <item>黄色系</item>
+        <item>绿色系</item>
+        <item>蓝色系</item>
+        <item>灰色系</item>
+        <item>紫色系</item>
+        <item>棕色系</item>
+        <item>其他色系</item>
+    </string-array>
+    
+    <string-array translatable="false" name="fillin_sitenumber">
+        <item>1个</item>
+        <item>2个</item>
+        <item>3个</item>
+        <item>4个</item>
+        <item>5个</item>
+        <item>6个</item>
+    </string-array>
+    
+    <string-array translatable="false" name="fillin_time">
+        <item>凌晨0点</item>
+        <item>凌晨1点</item>
+        <item>凌晨2点</item>
+        <item>凌晨3点</item>
+        <item>凌晨4点</item>
+        <item>凌晨5点</item>
+        <item>上午6点</item>
+        <item>上午7点</item>
+        <item>上午8点</item>
+        <item>上午9点</item>
+        <item>上午10点</item>
+        <item>上午11点</item>
+        <item>中午12点</item>
+        <item>下午1点</item>
+        <item>下午2点</item>
+        <item>下午3点</item>
+        <item>下午4点</item>
+        <item>下午5点</item>
+        <item>下午6点</item>
+        <item>晚上7点</item>
+        <item>晚上8点</item>
+        <item>晚上9点</item>
+        <item>晚上10点</item>
+        <item>晚上11点</item>       
+    </string-array>
+    
+</resources>

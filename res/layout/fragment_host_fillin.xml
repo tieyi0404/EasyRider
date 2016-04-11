@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+     android:background="@color/bg_color" 
+     android:id="@+id/host_fillinfragment" >
+     
+  <ScrollView 
+    android:id="@+id/p_scroll"
+ 	android:layout_width="fill_parent"  
+ 	android:layout_height="fill_parent"  
+ 	android:fastScrollEnabled="true"
+ 	android:fadingEdge="vertical"> 
+
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"             
+    android:layout_margin="5dip"
+    android:background="@drawable/shape"
+    android:padding="5dip">
+    
+   <TextView
+       android:id="@+id/fill_textView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignBottom="@+id/fill_imageView2"
+       android:layout_alignLeft="@+id/fill_textView1"
+       android:text="我的信息"
+       android:layout_marginBottom="14dp"
+       android:textAppearance="?android:attr/textAppearanceSmall"
+       android:textColor="@color/light_grey"
+       android:textSize="20dp" />
+        
+    <ImageView
+        android:id="@+id/fill_imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="44dp"
+        android:src="@drawable/divide_line_xu" />
+        
+    <TextView
+        android:id="@+id/fill_textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fill_imageView2"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:text="@string/username"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+    
+    <EditText
+        android:id="@+id/fillin_username"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fill_textView1"
+        android:layout_alignBottom="@+id/fill_textView1"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/fill_textView1"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:singleLine="true"
+        android:hint="6个字符以内"
+        android:textSize="16dp" />
+    
+    <ImageView
+        android:id="@+id/fill_imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fillin_username"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/divide_line_xu" />
+
+
+    <TextView
+        android:id="@+id/fill_textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fill_imageView3"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="14dp"
+        android:text="性别"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+
+    <Spinner
+        android:id="@+id/fillin_sex"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fill_textView2"
+        android:layout_alignBottom="@+id/fill_textView2"
+        android:layout_alignLeft="@+id/fillin_username"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+
+   <ImageView
+        android:id="@+id/fill_imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fillin_sex"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/divide_line_xu" />
+   
+   <TextView
+       android:id="@+id/fill_textView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_alignLeft="@+id/fill_textView2"
+       android:layout_below="@+id/fill_imageView4"
+       android:layout_marginTop="14dp"
+       android:text="驾龄"
+       android:textAppearance="?android:attr/textAppearanceLarge"
+       android:textSize="16dp" />
+   
+    <Spinner
+        android:id="@+id/fillin_driverage"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fill_textView3"
+        android:layout_alignBottom="@+id/fill_textView3"
+        android:layout_alignLeft="@+id/fillin_sex"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+    
+   <ImageView
+        android:id="@+id/fill_imageView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+         android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fillin_driverage"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/divide_line_xu" />
+   
+     <TextView
+        android:id="@+id/fill_textView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fill_textView3"
+        android:layout_below="@+id/fill_imageView5"
+        android:layout_marginTop="14dp"
+        android:text="品牌"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+     
+      <EditText
+        android:id="@+id/fillin_type"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fill_textView6"
+        android:layout_alignBottom="@+id/fill_textView6"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/fill_textView6"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:singleLine="true"
+        android:hint="汽车品牌"
+        android:textSize="16dp" />
+     
+   <ImageView
+        android:id="@+id/fill_imageView6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fill_textView6"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/divide_line_xu" /> 
+        
+   
+   <TextView
+        android:id="@+id/fill_textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fill_textView3"
+        android:layout_below="@+id/fill_imageView6"
+        android:layout_marginTop="14dp"
+        android:text="颜色"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+   
+
+
+    <Spinner android:id="@+id/spinner_color"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/fill_textView4"
+        android:layout_alignBaseline="@+id/fill_textView4"
+        android:layout_alignLeft="@+id/fillin_driverage"
+        android:text="Large Text"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+
+   <ImageView
+        android:id="@+id/fill_imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fill_textView4"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/divide_line_xu" />    
+   
+    <TextView
+        android:id="@+id/fill_textView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/fill_textView3"
+        android:layout_below="@+id/fill_imageView7"
+        android:layout_marginTop="14dp"
+        android:text="牌号"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textSize="16dp" />
+    
+      <EditText
+        android:id="@+id/fillin_number"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/fill_textView7"
+        android:layout_alignBottom="@+id/fill_textView7"
+        android:layout_marginLeft="30dp"
+        android:layout_toRightOf="@+id/fill_textView7"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:singleLine="true"
+        android:hint="汽车号牌"
+        android:textSize="16dp" />
+    
+    
+   <ImageView
+        android:id="@+id/fill_imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_below="@+id/fill_textView7"
+        android:layout_marginTop="16dp"
+        android:src="@drawable/divide_line_xu" /> 
+        
+   <Button
+       android:id="@+id/fillin_changebtn"
+       android:layout_width="200dp"
+       android:layout_height="50dp"
+       android:layout_centerHorizontal="true"
+       android:layout_below="@+id/fill_imageView8"
+       android:layout_marginTop="40dp"
+       android:background="@drawable/corner_button"
+       android:fontFamily="roboto_light"
+       android:paddingBottom="0dp"
+       android:paddingTop="0dp"
+       android:text="修改" 
+       android:textColor="@color/title_color"/>
+    
+   </RelativeLayout></ScrollView>
+</RelativeLayout>

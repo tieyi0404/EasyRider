@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/p_title"
+        layout="@layout/publish_header" />
+    
+   <ScrollView 
+ 	android:layout_width="fill_parent"  
+ 	android:layout_height="fill_parent"  
+ 	android:layout_below="@+id/p_title"
+ 	android:fastScrollEnabled="true"
+ 	android:fadingEdge="vertical"> 
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/shape"
+    android:padding="5dip">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:id="@+id/detail_ft" >
+    
+       <ImageView
+       android:id="@+id/guest_imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+    	<TextView
+			android:id="@+id/g_ft_fromto"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:layout_below="@+id/guest_imageView"
+    		android:layout_marginTop="10dp"
+    		android:textSize="18dp"
+    		android:text=""
+			android:padding="10px"
+    		android:textStyle="bold"/>
+    	
+    	<ImageView
+       android:id="@+id/guest_imageView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/g_ft_fromto"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+    	
+    	<LinearLayout
+    	    android:id="@+id/guest_linerlayout"
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@+id/guest_imageView1"
+       		android:layout_marginTop="10dp"
+    		android:orientation="horizontal">
+    		
+    	    <TextView
+    	    android:id="@+id/pb_time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text="发布时间"
+    		android:textSize="16dp"
+    		android:padding="10px"/>
+    	    
+    	    <TextView
+			android:id="@+id/hr_pub_time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"/>
+    		
+    	</LinearLayout>
+	
+
+    	<ImageView
+       android:id="@+id/guest_imageView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/guest_linerlayout"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+    	
+    	<TextView
+    	    android:id="@+id/gr_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guest_imageView2"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="起        点"
+            android:textSize="16dp" />
+    	
+    	<ImageView
+       android:id="@+id/guest_imageView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/gr_from"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+
+        <TextView
+            android:id="@+id/gr_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guest_imageView3"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="终        点"
+            android:textSize="16dp" />
+        
+    	<ImageView
+       android:id="@+id/guest_imageView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/gr_to"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+         
+         <TextView
+            android:id="@+id/gr_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guest_imageView4"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="期望出发时间"
+            android:textSize="16dp" />
+         
+    	<ImageView
+       android:id="@+id/guest_imageView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/gr_time"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+         
+         <TextView
+			android:id="@+id/gr_sourceAddr"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/gr_from"
+        	android:layout_alignBottom="@+id/gr_from"
+        	android:layout_toRightOf="@+id/gr_from"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+         
+         
+         <TextView
+			android:id="@+id/gr_destAddr"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/gr_to"
+        	android:layout_alignBottom="@+id/gr_to"
+        	android:layout_toRightOf="@+id/gr_to"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+   
+                
+        <TextView
+			android:id="@+id/gr_gotime"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/gr_time"
+        	android:layout_alignBottom="@+id/gr_time"
+        	android:layout_toRightOf="@+id/gr_time"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+     	<TextView
+			android:id="@+id/detail_at_info"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:layout_below="@+id/guest_imageView5"
+    		android:layout_marginTop="10dp"
+    		android:textSize="16dp"
+    		android:text="附加信息:"
+			android:paddingLeft="10px"/>
+
+         
+     <TextView
+    	    android:id="@+id/gr_addiInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_at_info"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text=""
+            android:textSize="16dp" />
+     
+     
+    	<ImageView
+       android:id="@+id/guest_imageView7"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/gr_addiInfo"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+
+     
+        <TextView
+    	    android:id="@+id/gt_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+    		android:layout_below="@+id/guest_imageView7"
+            android:padding="10px"
+            android:text="联  系  人"
+            android:textSize="16dp" />
+        
+    	<ImageView
+       android:id="@+id/guest_imageView8"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/gt_name"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+
+        <TextView
+            android:id="@+id/gt_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guest_imageView8"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="电        话"
+            android:textSize="16dp" />
+        
+        
+    	<ImageView
+       android:id="@+id/guest_imageView9"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/gt_phone"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+        <TextView
+            android:id="@+id/ct_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/guest_imageView9"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="联系我时， 请说明是在顺路上看到的~~"
+            android:textColor="@color/red"
+            android:textSize="16dp" />
+        
+       <TextView
+			android:id="@+id/gt_gtperson"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/gt_name"
+        	android:layout_alignBottom="@+id/gt_name"
+        	android:layout_toRightOf="@+id/gt_name"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+       
+        <TextView
+			android:id="@+id/gt_phonenumber"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/gt_phone"
+        	android:layout_alignBottom="@+id/gt_phone"
+        	android:layout_toRightOf="@+id/gt_phone"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+         <TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		 android:layout_below="@+id/ct_info"
+    		android:textSize="16dp"
+    		android:padding="100px"
+    		android:textStyle="bold"/>
+    
+    </RelativeLayout>
+  
+    </RelativeLayout></ScrollView>
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dip"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="#63a219"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/detail_tool" >
+        
+       
+    <TextView
+        android:id="@+id/t_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+		android:padding="10dip"
+        android:text="打  电  话"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+    
+	<TextView
+        android:id="@+id/t_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:padding="10dip"
+        android:text="发  短  信"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

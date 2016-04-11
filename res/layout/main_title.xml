@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/title_workspace_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="50.0dip"
+    android:background="#63a219">
+
+    
+	<TextView
+        android:id="@+id/head_user"
+        android:layout_width="60dip"
+        android:layout_height="30dip"
+        android:background="@drawable/publish_bg"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="5dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:textColor="#63a219"
+        android:textSize="15sp" />
+
+        
+   <com.easy.freerider.util.MySlipSwitch
+	   		android:id="@+id/main_myslipswitch"
+	   		android:layout_width="wrap_content"
+	   		android:layout_height="wrap_content"
+        	android:layout_alignBottom="@+id/head_user"
+        	android:layout_centerHorizontal="true" />
+    
+	<TextView
+        android:id="@+id/head_setting"
+        android:layout_width="80dip"
+        android:layout_height="30dip"
+        android:background="@drawable/publish_bg"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:paddingBottom="5dip"
+        android:paddingLeft="10dip"
+        android:paddingRight="10dip"
+        android:paddingTop="5dip"
+        android:textColor="#63a219"
+        android:textSize="15sp" />
+	
+</RelativeLayout>

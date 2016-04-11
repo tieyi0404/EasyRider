@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.easy.freerider"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="19" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" >
+    </uses-permission>
+      <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" >
+    </uses-permission>
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <uses-permission android:name="android.permission.CALL_PHONE"></uses-permission>  
+	
+    <application
+        android:name="com.easy.freerider.common.activity.AppContext"
+        android:allowBackup="true"
+        android:icon="@drawable/logo"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <service
+            android:name="com.baidu.location.f"
+            android:enabled="true"
+            android:process=":remote" >
+            <intent-filter>
+                <action android:name="com.baidu.location.service_v2.2" >
+                </action>
+            </intent-filter>
+        </service>        
+        <meta-data
+            android:name="com.baidu.lbsapi.API_KEY"
+            android:value="qgN2u1gXbMHxspZX7ZHay68D" /> 
+        <activity
+            android:name="com.easy.freerider.common.activity.WelcomeActivity"
+            android:screenOrientation="portrait" 
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		<activity android:name="com.easy.freerider.host.activity.HostMainActivity" 
+		    android:screenOrientation="nosensor" ></activity>
+		<activity android:name="com.easy.freerider.guest.activity.GuestMainActivity" 
+		    android:screenOrientation="nosensor" ></activity>
+	    <activity android:name="com.easy.freerider.common.activity.RoleChooseActivity" 
+	        android:theme="@style/Theme.FloatActivity" 
+	        android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.common.activity.LoginActivity"
+		    android:screenOrientation="portrait"></activity>
+		<activity android:name="com.easy.freerider.common.activity.RegisterActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.host.activity.HostPublishActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.guest.activity.GuestPublishActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.host.activity.CurrentHostOrderActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.guest.activity.CurrentGuestOrderActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.host.activity.HistoryHostOrderActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.guest.activity.HistoryGuestOrderActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.guest.activity.GuestRouteDetailActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.host.activity.HostRouteDetailActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<activity android:name="com.easy.freerider.common.activity.PolicyActivity" 
+		    android:screenOrientation="portrait" ></activity>
+		<service android:name="com.easy.freerider.net.AppUpgradeService"/>
+    </application>
+
+</manifest>

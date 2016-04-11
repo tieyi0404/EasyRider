@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/p_title"
+        layout="@layout/publish_header" />
+    
+   <ScrollView 
+ 	android:layout_width="fill_parent"  
+ 	android:layout_height="fill_parent"  
+ 	android:layout_below="@+id/p_title"
+ 	android:fastScrollEnabled="true"
+ 	android:fadingEdge="vertical"> 
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/shape"
+    android:padding="5dip">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:id="@+id/detail_ft" >
+    
+     <ImageView
+       android:id="@+id/d_imageView8"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+    	<TextView
+			android:id="@+id/ft_fromto"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:layout_below="@+id/d_imageView8"
+       		android:layout_marginTop="10dp"
+    		android:textSize="18dp"
+			android:padding="10px"
+    		android:textStyle="bold"/>
+    	
+    <ImageView
+       android:id="@+id/d_imageView"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/ft_fromto"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+    	
+    	<LinearLayout
+    	    android:id="@+id/d_liner_dtinfo"
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_below="@+id/d_imageView"
+    		android:layout_marginTop="10dp"
+    		android:orientation="horizontal">
+    		
+    	    <TextView
+    	    android:id="@+id/ft_pb_time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text="发布时间"
+    		android:textSize="16dp"
+    		android:padding="10px"/>
+    	    
+    	    <TextView
+			android:id="@+id/ft_textview1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text="2015 - 11- 20 18：20：30"
+    		android:textSize="16dp"
+    		android:padding="10px"/>
+    		
+    	</LinearLayout>
+    	
+    	<ImageView
+       android:id="@+id/d_imageView1"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/d_liner_dtinfo"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+    	
+    	<TextView
+    	    android:id="@+id/dt_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView1"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="起        点"
+            android:textSize="16dp" />
+    	
+      <ImageView
+       android:id="@+id/d_imageView2"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/dt_from"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+
+        <TextView
+            android:id="@+id/dt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView2"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="终        点"
+            android:textSize="16dp" />
+        
+        
+     <ImageView
+       android:id="@+id/d_imageView3"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/dt_to"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+              
+        
+        <TextView
+            android:id="@+id/dt_byway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/d_imageView3"
+            android:padding="10px"
+            android:text="途径地点"
+            android:textSize="16dp" />
+        
+     <ImageView
+       android:id="@+id/d_imageView4"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/dt_byway"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+        
+         <TextView
+            android:id="@+id/dt_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView4"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="提供座位"
+            android:textSize="16dp" />
+         
+     <ImageView
+       android:id="@+id/d_imageView5"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/dt_site"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+         
+         <TextView
+            android:id="@+id/dt_gotime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView5"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="出发时间"
+            android:textSize="16dp" />
+         
+     <ImageView
+       android:id="@+id/d_imageView6"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/dt_gotime"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+         
+       <TextView
+            android:id="@+id/dt_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView6"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="意向费用"
+            android:textSize="16dp" />
+       
+     <ImageView
+       android:id="@+id/d_imageView7"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/dt_cost"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+         
+         <TextView
+			android:id="@+id/dt_textview1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_from"
+        	android:layout_alignBottom="@+id/dt_from"
+        	android:layout_toRightOf="@+id/dt_from"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+         
+         
+         <TextView
+			android:id="@+id/dt_textview2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_to"
+        	android:layout_alignBottom="@+id/dt_to"
+        	android:layout_toRightOf="@+id/dt_to"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+         
+        <TextView
+			android:id="@+id/dt_textview3"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_byway"
+        	android:layout_alignBottom="@+id/dt_byway"
+        	android:layout_toRightOf="@+id/dt_byway"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+        <TextView
+			android:id="@+id/dt_textview4"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_site"
+        	android:layout_alignBottom="@+id/dt_site"
+        	android:layout_toRightOf="@+id/dt_site"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+                
+        <TextView
+			android:id="@+id/dt_textview5"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_gotime"
+        	android:layout_alignBottom="@+id/dt_gotime"
+        	android:layout_toRightOf="@+id/dt_gotime"
+    		android:text="2016-11-20 11：00：00"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+    		
+        <TextView
+			android:id="@+id/dt_textview6"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_cost"
+        	android:layout_alignBottom="@+id/dt_cost"
+        	android:layout_toRightOf="@+id/dt_cost"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+          <TextView
+			android:id="@+id/detail_at_info"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:layout_below="@+id/d_imageView7" 
+       		android:layout_marginTop="10dp"
+    		android:textSize="16dp"
+    		android:text="附加信息:"
+			android:paddingLeft="10px"/>
+
+    	 <TextView
+    	    android:id="@+id/at_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/detail_at_info"
+            android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:textSize="16dp" />
+     
+     <ImageView
+       android:id="@+id/d_imageView9"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/at_info"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+     
+        <TextView
+    	    android:id="@+id/ct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_below="@+id/d_imageView9"
+            android:padding="10px"
+            android:text="联  系  人"
+            android:textSize="16dp" />
+        
+     <ImageView
+       android:id="@+id/d_imageView10"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/ct_name"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+
+        <TextView
+            android:id="@+id/ct_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+      		android:layout_marginTop="10dp"
+            android:layout_below="@+id/d_imageView10"
+            android:padding="10px"
+            android:text="电        话"
+            android:textSize="16dp" />
+        
+      <ImageView
+       android:id="@+id/d_imageView11"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/ct_phone"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+        <TextView
+            android:id="@+id/ct_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView11"
+      		android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="车  牌  号"
+            android:textSize="16dp" />
+        
+      <ImageView
+       android:id="@+id/d_imageView12"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/ct_number"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+        <TextView
+            android:id="@+id/ct_type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView12"
+      		android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="汽车品牌"
+            android:textSize="16dp" />
+        
+      <ImageView
+       android:id="@+id/d_imageView13"
+       android:layout_width="wrap_content"
+       android:layout_height="wrap_content"
+       android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+       android:layout_below="@+id/ct_type"
+       android:layout_marginTop="10dp"
+       android:src="@drawable/divide_line_xu" />
+        
+        <TextView
+            android:id="@+id/ct_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/d_imageView13"
+      		android:layout_marginTop="10dp"
+            android:padding="10px"
+            android:text="联系我时， 请说明是在顺路上看到的~~"
+            android:textColor="@color/red"
+            android:textSize="16dp" />
+        
+       <TextView
+			android:id="@+id/ct_textview1"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_name"
+        	android:layout_alignBottom="@+id/ct_name"
+        	android:layout_toRightOf="@+id/ct_name"
+    		android:text="王先生"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+       
+        <TextView
+			android:id="@+id/ct_textview2"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_phone"
+        	android:layout_alignBottom="@+id/ct_phone"
+        	android:layout_toRightOf="@+id/ct_phone"
+    		android:text="13456789876"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+        
+        <TextView
+			android:id="@+id/ct_textview3"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_number"
+        	android:layout_alignBottom="@+id/ct_number"
+        	android:layout_toRightOf="@+id/ct_number"
+    		android:text="鲁B 12345"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+        <TextView
+			android:id="@+id/ct_textview4"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_type"
+        	android:layout_alignBottom="@+id/ct_type"
+        	android:layout_toRightOf="@+id/ct_type"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+       <TextView
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		 android:layout_below="@+id/ct_info"
+    		android:textSize="16dp"
+    		android:padding="100px"
+    		android:textStyle="bold"/>
+        
+    
+    </RelativeLayout>
+    
+<!--     <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:layout_below="@+id/detail_ct"
+    android:background="@color/bg_color" 
+    android:id="@+id/detail_tt" >
+        
+        <TextView
+    	    android:id="@+id/tt_his"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="该用户曾经发布了 1条拼车信息"
+            android:textSize="16dp" />
+    
+    </RelativeLayout> -->
+    </RelativeLayout></ScrollView>
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dip"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="#63a219"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/detail_tool" >
+        
+       
+    <TextView
+        android:id="@+id/t_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+		android:padding="10dip"
+        android:text="打  电  话"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+    
+	<TextView
+        android:id="@+id/t_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:padding="10dip"
+        android:text="发  短  信"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

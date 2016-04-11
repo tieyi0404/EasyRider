@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+	<RelativeLayout 
+    android:id="@+id/activity_topbar"
+    android:layout_width="match_parent"
+    android:layout_height="50dip"
+    android:background="#63a219"
+    android:orientation="vertical" >
+       <TextView
+           android:id="@+id/note_info"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:layout_centerHorizontal="true"
+           android:padding="10dp"
+           android:text="客满"
+           android:textColor="@color/white"
+           android:textSize="18dp" />
+
+    </RelativeLayout>
+
+ 		<RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_below="@+id/activity_topbar">
+        
+        <TextView
+			android:id="@+id/dt_showinfo"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_centerHorizontal="true"
+    		android:layout_margin="30dp"
+    		android:text="点击客满，乘客将再不会看到该条发布信息，您确定客满吗?"
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+      
+      <Button
+            android:id="@+id/full_sure"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+        	android:background="@drawable/textview_border"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/dt_showinfo"
+            android:text="确认客满"
+            android:layout_marginLeft="30dp"
+            android:layout_marginBottom="30dp"
+            android:textColor="@color/white"/>
+        
+        
+          <Button
+            android:id="@+id/full_cancel"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignBaseline="@+id/full_sure"
+        	android:layout_alignBottom="@+id/full_sure"
+        	android:background="@drawable/textview_border"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/dt_showinfo"
+            android:text="取消"
+            android:layout_marginRight="30dp"
+            android:textColor="@color/white" />
+    </RelativeLayout>
+
+</RelativeLayout>

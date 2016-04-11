@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/shape"
+    android:orientation="vertical" >
+    
+    <include
+        android:id="@+id/p_title"
+        layout="@layout/publish_header" />
+    
+   <ScrollView 
+ 	android:layout_width="fill_parent"  
+ 	android:layout_height="fill_parent"  
+ 	android:layout_below="@+id/p_title"
+ 	android:fadingEdge="vertical"> 
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/shape"
+    android:padding="5dip">
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+    android:id="@+id/detail_ft" >
+    	<TextView
+			android:id="@+id/ft_fromto"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:textSize="18dp"
+    		android:text=""
+			android:padding="10px"
+    		android:textStyle="bold"/>
+    	
+    	<LinearLayout
+    	    android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:orientation="horizontal">
+    		
+    	    <TextView
+    	    android:id="@+id/pb_time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text="发布时间"
+    		android:textSize="16dp"
+    		android:padding="10px"/>
+    	    
+    	    <TextView
+			android:id="@+id/hr_pub_time"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"/>
+    		
+    	</LinearLayout>
+	
+
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="@color/bg_color"
+    android:layout_below="@+id/detail_ft"
+    android:id="@+id/detail_dt" >
+    	
+    	<TextView
+    	    android:id="@+id/dt_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="起        点"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/dt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dt_from"
+            android:padding="10px"
+            android:text="终        点"
+            android:textSize="16dp" />
+        
+        <TextView
+            android:id="@+id/dt_byway"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dt_to"
+            android:padding="10px"
+            android:text="途径地点"
+            android:textSize="16dp" />
+        
+        
+         <TextView
+            android:id="@+id/dt_site"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dt_byway"
+            android:padding="10px"
+            android:text="提供座位"
+            android:textSize="16dp" />
+         
+         <TextView
+            android:id="@+id/dt_gotime"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dt_site"
+            android:padding="10px"
+            android:text="出发时间"
+            android:textSize="16dp" />
+         
+       <TextView
+            android:id="@+id/dt_cost"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/dt_gotime"
+            android:padding="10px"
+            android:text="意向费用"
+            android:textSize="16dp" />
+         
+         <TextView
+			android:id="@+id/hr_sourceAddr"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_from"
+        	android:layout_alignBottom="@+id/dt_from"
+        	android:layout_toRightOf="@+id/dt_from"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+         
+         
+         <TextView
+			android:id="@+id/hr_destAddr"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_to"
+        	android:layout_alignBottom="@+id/dt_to"
+        	android:layout_toRightOf="@+id/dt_to"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+         
+        <TextView
+			android:id="@+id/hr_bypass"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_byway"
+        	android:layout_alignBottom="@+id/dt_byway"
+        	android:layout_toRightOf="@+id/dt_byway"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+        <TextView
+			android:id="@+id/hr_seatNumber"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_site"
+        	android:layout_alignBottom="@+id/dt_site"
+        	android:layout_toRightOf="@+id/dt_site"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+                
+        <TextView
+			android:id="@+id/hr_gotime"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_gotime"
+        	android:layout_alignBottom="@+id/dt_gotime"
+        	android:layout_toRightOf="@+id/dt_gotime"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+    		
+        <TextView
+			android:id="@+id/hr_fee"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_cost"
+        	android:layout_alignBottom="@+id/dt_cost"
+        	android:layout_toRightOf="@+id/dt_cost"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="@color/bg_color"
+    android:layout_below="@+id/detail_dt" 
+    android:id="@+id/detail_at" >
+         
+     <TextView
+    	    android:id="@+id/hr_addiInfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text=""
+            android:textSize="16dp" />
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:layout_below="@+id/detail_at"
+    android:background="@color/bg_color" 
+    android:id="@+id/detail_ct" >
+     
+        <TextView
+    	    android:id="@+id/ct_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text="联  系  人"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/ct_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_name"
+            android:padding="10px"
+            android:text="电        话"
+            android:textSize="16dp" />
+        
+        <TextView
+            android:id="@+id/ct_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_phone"
+            android:padding="10px"
+            android:text="车  牌  号"
+            android:textSize="16dp" />
+        
+        <TextView
+            android:id="@+id/ct_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ct_number"
+            android:padding="10px"
+            android:text="联系我时， 请说明是在顺风车上看到的~~"
+            android:textColor="@color/red"
+            android:textSize="16dp" />
+        
+       <TextView
+			android:id="@+id/hr_ctperson"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_name"
+        	android:layout_alignBottom="@+id/ct_name"
+        	android:layout_toRightOf="@+id/ct_name"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+       
+        <TextView
+			android:id="@+id/hr_phonenumber"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_phone"
+        	android:layout_alignBottom="@+id/ct_phone"
+        	android:layout_toRightOf="@+id/ct_phone"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+        
+        
+        <TextView
+			android:id="@+id/hr_cartype"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/ct_number"
+        	android:layout_alignBottom="@+id/ct_number"
+        	android:layout_toRightOf="@+id/ct_number"
+    		android:text=""
+    		android:textSize="16dp"
+    		android:padding="10px"
+    		android:textStyle="bold"/>
+    
+    </RelativeLayout>
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:layout_below="@+id/detail_ct"
+    android:background="@color/bg_color" 
+    android:id="@+id/detail_tt" >
+        
+        <TextView
+    	    android:id="@+id/hr_his"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10px"
+            android:text=""
+            android:textSize="16dp" />
+    
+    </RelativeLayout>
+    </RelativeLayout></ScrollView>
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dip"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="#63a219"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/detail_tool" >
+        
+       
+    <TextView
+        android:id="@+id/t_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="25dp"
+		android:padding="10dip"
+        android:text="打  电  话"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+    
+	<TextView
+        android:id="@+id/t_mail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="25dp"
+        android:padding="10dip"
+        android:text="发  短  信"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+        
+    </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="ip">http://115.159.106.131</item>
+    <item name="port">3000</item>
+    <item name="versionip">http://115.159.106.131/App/version.xml</item>
+</resources>

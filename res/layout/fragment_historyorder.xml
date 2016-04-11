@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <include
+        android:id="@+id/p_title"
+        layout="@layout/publish_header" />
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_centerHorizontal="true"
+    android:layout_margin="5dip"
+    android:background="@drawable/shape"
+    android:paddingLeft="5dip"
+    android:paddingRight="5dip"
+    android:layout_below="@+id/p_title"
+    android:id="@+id/query_content" > 
+    
+       
+    <com.easy.freerider.widget.PullToRefreshListView
+            android:id="@+id/history_order_list"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:cacheColorHint="#00000000"
+            android:divider="#00000000"
+            android:dividerHeight="14dip"
+            android:drawSelectorOnTop="false"
+            android:scrollbars="vertical"
+            android:fadingEdge="none" >
+    </com.easy.freerider.widget.PullToRefreshListView>
+   </RelativeLayout>
+    
+
+</RelativeLayout>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">顺路</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">设置</string>
+    <string name="title_activity_main">顺路</string>
+    <string name="my_order">信息大厅</string>
+    <string name="query_info">查询线路</string>
+    <string name="history_order">个人主页</string>
+    <string name="more">更多</string>
+    <string name="title_activity_test">TestActivity</string>
+   <string name="login">登录</string>
+    <string name="newregister">新用户注册</string>
+    <string name="username_tip">用户名</string>
+    <string name="passwd">密码</string>
+    <string name="passwd_confirm">确认密码</string>
+    <string name="alreadyregister_tip">已有账号登录</string>
+    <string name="register">注册</string>
+    <string name="currentuser">登录用户</string>
+    <string name="logout">退出登录</string>
+    <string name="username_illegal_tip">用户名含有非法字符</string>
+    <string name="register_tip1">用户名不能少于4个字符</string>
+    <string name="register_tip2">密码不能少于6个字符</string>
+    <string name="register_tip3">密码不一致</string>
+    <string name="register_tip4">退出成功</string>
+    <string name="register_tip5">注销失败</string>
+    <string name="register_tip6">登录成功</string>
+    <string name="register_tip7">登录失败</string>
+    <string name="register_tip8">旧密码</string>
+    <string name="register_tip9">新密码</string>
+    <string name="register_tip10">确认新密码</string>
+    <string name="register_tip11">密码错误</string>
+    <string name="register_tip12">用户已存在</string>
+    <string name="register_tip13">该用户不存在或未完成注册</string>
+    <string name="register_tip14">获取信息成功</string>
+    <string name="register_tip15">网络错误，请稍后再试</string>
+    <string name="internal_error">内部错误</string>
+    <string name="register1_tip1">获取验证码成功</string>
+    <string name="register1_tip2">获取验证码失败</string>
+    <string name="register_success">注册成功</string>
+    <string name="register_failed">注册失败</string>
+    <string name="register_changepasswd">修改密码</string>
+    <string name="login_user_tip">用户名不能为空</string>
+    <string name="login_passwd_tip">密码不能为空</string>
+
+    <string name="change_passwd_sucess">修改密码成功</string>
+    <string name="phone_tip">电话</string>
+    <string name="mail_tip">邮箱</string>
+    <string name="activation_tip">激活码</string>
+    <string name="activation">激活</string>
+    <string name="activation_tip1">激活成功</string>
+    <string name="activation_tip2">激活失败</string>
+    <string name="register1_tip">请输入正确手机号</string>
+    <string name="register2_tip1">请输入验证码</string>
+    <string name="fillin_tip1">修改成功</string>
+    <string name="fillin_tip2">修改失败</string>
+    <string name="username">姓名</string>
+    <string name="changeproperty">修改个人资料</string>
+    <string name="role_host">车主</string>
+    <string name="role_guest">乘客</string>
+    <string name="pop_left">弹出左侧菜单</string> 
+    <string name="open">打开</string> 
+    <string name="save">保存</string> 
+    <string name="close">关闭</string>
+    <string name="changerole">当前订单</string> 
+    <string name="more_info">历史订单</string> 
+    <string name="logout_sys">退 出 登 录</string>
+    <string name="property_tip">获取信息成功</string>
+    <string name="property_tip1">获取信息失败</string>
+    <string name="public_success">发布信息成功</string>
+    <string name="modify_success">完善个人信息信息成功</string>
+    
+    <string name="pull_to_refresh_pull_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_release_label">松开可以刷新</string>
+    <string name="pull_to_refresh_refreshing_label">加载中...</string>
+    <string name="pull_to_refresh_tap_label">下拉可以刷新</string>
+    <string name="pull_to_refresh_update">最近更新：</string>
+    
+    <string name="way_direction">---></string>
+    <string name="start_time">出发时间:</string>
+    
+    <string name="new_data_toast_message">有 %d 条更新</string>
+    <string name="bypassAddr">途径地</string>
+    
+        <!-- xlistview -->
+    <string name="header_hint_refresh_normal">下拉刷新</string>
+    <string name="header_hint_refresh_ready">松开刷新</string>
+    <string name="header_hint_refresh_loading">Refreshing&#8230;</string>
+    <string name="header_hint_refresh_time">Time：</string>
+    <string name="footer_hint_load_normal">下拉显示更多</string>
+    <string name="footer_hint_load_ready">松开刷新</string>
+    
+    
+    <string name="app_new_version">New Version:&#160;</string>
+    <string name="app_updateinfo">Update Info:&#160;</string>
+    <string name="app_upgrade_download_sucess">下载成功</string>
+    <string name="app_upgrade_download_fail">下载失败</string>
+    <string name="confirm">确认下载</string>
+    <string name="cancel">取消下载</string>
+    <string name="check_new_version">下载新版本</string>
+    
+    
+    <string name="start_point">起    点</string>
+    <string name="start_point_hint">请输入起点</string>
+    
+</resources>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+	<!--
+** Copyright 2010, Ideasandroid
+-->
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+	<solid android:color="#ffffff" />
+    <corners  
+          android:topLeftRadius="14dp"
+          android:topRightRadius="14dp"
+          android:bottomLeftRadius="14dp"
+          android:bottomRightRadius="14dp"/>
+    <!--設置漸變-->
+    <gradient android:startColor="#9cff00" 
+          android:endColor="#197600"
+          android:angle="270"/>
+    <stroke   
+        android:width="2dp" 
+        android:color="#63a219" /> 
+	<padding android:left="10dp" android:top="10dp" android:right="10dp"
+		android:bottom="10dp" />
+</shape>

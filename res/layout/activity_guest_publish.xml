@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" 
+    android:id="@+id/fragment_publish">
+    
+        <include
+        android:id="@+id/p_title"
+        layout="@layout/publish_header" />
+        
+    
+    <ScrollView 
+ 	android:layout_width="fill_parent"  
+ 	android:layout_height="fill_parent" 
+ 	android:layout_below="@+id/p_title" 
+ 	android:fadingEdge="vertical"> 
+ 	
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dip"
+    android:background="@drawable/shape"
+    android:padding="5dip">
+          
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/bg_color"
+
+    android:id="@+id/pub_dt" >
+       	
+    	<TextView
+    	    android:id="@+id/dt_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10px"
+            android:text="起        点"
+            android:textSize="16dp" />
+    	
+    	<EditText
+			android:id="@+id/dt_from_show"
+    		android:layout_width="200dp"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_from"
+        	android:layout_alignBottom="@+id/dt_from"
+        	android:layout_toRightOf="@+id/dt_from"
+        	android:layout_marginLeft="10dp"
+        	android:background="@drawable/edit_shape"
+        	android:hint="请输入起点"
+    		android:layout_marginTop="10dip"
+    		android:maxLength="10"
+    		android:textSize="16dp"
+			android:paddingLeft="10px"
+			android:padding="10px"/>
+    	        
+	  <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dt_from_show"
+        android:src="@drawable/divide_line_xu" />
+
+        <TextView
+            android:id="@+id/dt_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10px"
+            android:text="终        点"
+            android:textSize="16dp" />
+        
+        <EditText
+			android:id="@+id/dt_to_show"
+    		android:layout_width="200dp"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_to"
+        	android:layout_alignBottom="@+id/dt_to"
+        	android:layout_toRightOf="@+id/dt_to"
+        	android:layout_marginLeft="10dp"
+        	android:background="@drawable/edit_shape"
+        	android:hint="请输入终点"
+        	android:maxLength="10"
+    		android:layout_marginTop="10dip"
+    		android:textSize="16dp"
+			android:padding="10px"/>
+        
+	  <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/dt_to"
+        android:src="@drawable/divide_line_xu" />
+        
+
+    	
+    </RelativeLayout>
+    
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="@color/bg_color"
+    android:layout_below="@+id/pub_dt"
+    android:id="@+id/pub_tt" >
+
+    	
+    	<TextView
+    	    android:id="@+id/tt_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10px"
+            android:text="出发日期"
+            android:textSize="16dp" />
+    	
+    	
+       <EditText
+			android:id="@+id/tt_date_show"
+    		android:layout_width="200dp"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/tt_date"
+        	android:layout_alignBottom="@+id/tt_date"
+        	android:layout_toRightOf="@+id/tt_date"
+        	android:layout_marginLeft="10dp"
+        	android:background="@drawable/edit_shape"
+        	android:hint="日期"
+    		android:layout_marginTop="10dip"
+    		android:textSize="16dp"
+			android:padding="10px"/>
+    	
+        <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/tt_date"
+        android:src="@drawable/divide_line_xu" />
+    	
+        <TextView
+            android:id="@+id/dt_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/imageView7"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="10px"
+            android:paddingBottom="10px"
+            android:text="出发时间"
+            android:textSize="16dp" />
+        
+        
+       <Spinner
+			android:id="@+id/dt_time_show"
+    		android:layout_width="200dp"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/dt_time"
+        	android:layout_alignBottom="@+id/dt_time"
+        	android:layout_toRightOf="@+id/dt_time"
+        	android:text="Large Text"
+        	android:textAppearance="?android:attr/textAppearanceLarge"
+        	android:layout_marginLeft="10dp"
+        	android:hint="时间"
+    		android:layout_marginTop="10dip"
+    		android:textSize="16dp"
+			android:paddingLeft="10px"/>
+
+    </RelativeLayout>
+    	
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="@color/bg_color"
+    android:layout_below="@+id/pub_tt"
+    android:id="@+id/pub_at" >
+    	    
+    	<TextView
+			android:id="@+id/pub_at_info"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content" 
+    		android:textSize="16dp"
+    		android:text="附加信息(选填)"
+			android:paddingLeft="10px"/>
+    	
+    	<ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pub_at_info"
+        android:src="@drawable/divide_line_xu" />
+    	        
+    	        
+    	<EditText
+			android:id="@+id/pub_edit"
+    		android:layout_width="match_parent"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dp"
+    		android:layout_below="@+id/imageView8"
+    		android:background="@drawable/edit_shape"
+    		android:textSize="16dp"
+    		android:hint="附加信息以及计划相关介绍"
+    		android:maxLength="50"
+			android:padding="10px"/>
+    </RelativeLayout>
+    
+    
+   <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="10dip"
+    android:background="@color/bg_color"
+    android:layout_below="@+id/pub_at"
+    android:id="@+id/pub_ct" >
+    	    
+    	<TextView
+			android:id="@+id/pub_ct_name"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content" 
+    		android:layout_marginTop="10dip"
+    		android:textSize="16dp"
+    		android:text="联系人"
+			android:paddingLeft="10px"/>
+    	
+    	<TextView
+			android:id="@+id/pub_ct_name_show"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/pub_ct_name"
+        	android:layout_alignBottom="@+id/pub_ct_name"
+        	android:layout_toRightOf="@+id/pub_ct_name"
+    		android:layout_marginTop="10dip"
+    		android:textSize="16dp"
+			android:paddingLeft="10px"/>
+    	
+
+    	
+    	<ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_below="@+id/pub_ct_name"
+        android:src="@drawable/divide_line_xu" />
+    	
+    	<TextView
+			android:id="@+id/pub_ct_phone"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_marginTop="10dip"
+    		android:layout_below="@+id/imageView9"
+    		android:textSize="16dp"
+    		android:text="电    话"
+			android:paddingLeft="10px"
+			android:paddingBottom="10px"/>
+    	
+    	<TextView
+			android:id="@+id/pub_ct_phone_show"
+    		android:layout_width="wrap_content"
+    		android:layout_height="wrap_content"
+    		android:layout_alignBaseline="@+id/pub_ct_phone"
+        	android:layout_alignBottom="@+id/pub_ct_phone"
+        	android:layout_toRightOf="@+id/pub_ct_phone"
+    		android:layout_marginTop="10dip"
+    		android:textSize="16dp"
+			android:paddingLeft="10px"/>
+    </RelativeLayout>
+    </RelativeLayout> </ScrollView>	
+    
+    <RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="50dp"
+    android:layout_marginTop="10dip"
+    android:layout_alignParentBottom="true"
+    android:layout_gravity="bottom"
+    android:background="#63a219"
+    android:gravity="center_vertical|center_horizontal"
+    android:orientation="horizontal"
+    android:id="@+id/pub_tool" > 
+         
+    <TextView
+        android:id="@+id/pub_bt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+		android:padding="10dip"
+        android:text="发布信息"
+        android:textColor="@android:color/white"
+        android:background="@drawable/textview_border"
+        android:textSize="15sp" />
+        
+    </RelativeLayout>
+</RelativeLayout>
